@@ -1,38 +1,111 @@
-.App {
+.tareas {
+  border-bottom: #84d9bc;
+  display: inline-block;
+  margin-top: 5rem;
+  color: #fff;
+}
+
+.tareas::after {
+  content: "";
+  background-color: #84d9bc;
+  height: 1rem;
+  width: calc(100% + 1rem);
+  display: block;
+  margin: -1rem 0 0 0;
+}
+@media (min-width: 768px) {
+  .tareas::after {
+    width: calc(100% + 1rem);
+    margin: -1.6rem 0 0 0;
+    font-weight: 900;
+  }
+}
+
+.tareas__nueva {
+  color: #313c4e;
+  border-bottom: #fff;
+  display: inline-block;
+}
+.tareas__nueva::after {
+  content: "";
+  background-color: #fff;
+  height: 1rem;
+  width: calc(100% + 1rem);
+  display: block;
+  margin: -0.8rem 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .tareas__nueva::after {
+    width: calc(100% + 1rem);
+    margin: -1.2rem 0 0 0;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+}
+
+body {
+  background-color: #313c4e;
+  font-family: poppins;
+}
+
+.boton {
+  background-color: #fff;
+  margin-bottom: 10px;
+  color: #313c4e;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 10px;
+  border: none;
+}
+
+.boton:hover {
+  background-color: #6abda1;
+}
+
+.btn__terminar {
+  background-color: #84d9bc;
+}
+
+.btn__terminar:hover {
+  background-color: #5caa90;
+  color: #fff;
+}
+
+.btn__terminado {
+  border: solid 1px #84d9bc;
+  color: #84d9bc;
+}
+
+.btn__terminado:hover {
+  background-color: #5caa90;
+  color: #fff;
+}
+.formulario {
+  background-color: #84d9bc;
+}
+
+@media (min-width: 768px) {
+  .formulario {
+    border-radius: 10px;
+  }
+}
+
+.sin__tareas {
+  color: #fff;
+  font-size: 1.5rem;
   text-align: center;
+  margin-top: 10rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.campos {
+  background-color: rgb(245, 187, 187);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid red 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+  height: 100px;
 }
