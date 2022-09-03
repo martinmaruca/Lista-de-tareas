@@ -7,4 +7,4 @@ Responsive!!!
 
 
 
-Les dejo una [Demo](https://listdetarea.netlify.app/).
+Link to [Demo](https://listdetarea.netlify.app/).
